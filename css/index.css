@@ -32,6 +32,7 @@ a:hover,
 a:focus,
 a:active {
     text-decoration: none;
+    /* color: #FFF; */
     outline: none;
 }
 
@@ -83,7 +84,7 @@ header.hero h3 {
 .btn-p {
     background-image: none;
     border-color: transparent;
-    background-color: #37a7ff;
+    background-color: rgb(255, 161, 38);
     padding: 8px 16px;
     margin-top: 55px;
     color: #fff;
@@ -183,7 +184,7 @@ h1.heading.pink:after {
 
 .swiper-container {
     width: 100%;
-    height: 100%;
+    height: 650px;
     padding: 4em 1em;
 }
 
@@ -268,8 +269,10 @@ h1.heading.pink:after {
     display: inline-block;
     margin: 0 0.5rem;
 
-    animation: animate__fadeInRight; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 2s; /* don't forget to set a duration! */
+    animation: animate__fadeInRight;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+    /* don't forget to set a duration! */
 }
 
 .purple {
