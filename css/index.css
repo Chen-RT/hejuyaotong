@@ -12,6 +12,10 @@ body {
     letter-spacing: 0.03em;
 }
 
+@font-face {
+    font-family: 'my_font';
+    src: url("../fonts/font.ttf") format('truetype');
+}
 
 a {
     color: #7447ae;
@@ -156,7 +160,13 @@ ul.main-nav.show-it {
 }
 
 /* Main-show */
-
+.case-study .col-md-12 {
+    transform: translateY(-80px);
+    -webkit-transform: translateY(-80px);
+    padding: 5em 3em;
+    background-color: #fff;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.15);
+}
 
 
 .purple {

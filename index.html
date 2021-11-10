@@ -13,7 +13,7 @@
 
     <!-- CSS Sources -->
     <link rel="stylesheet" href="css/loading.css">
-
+    <link rel="stylesheet" href="css/vivify.min.css">
     <link href="https://cdn.bootcss.com/font-awesome/5.8.0/css/all.css" rel="stylesheet" />
     <!-- Bootstraps -->
     <link rel="stylesheet" href="css/bootstrap-theme.css">
@@ -33,17 +33,19 @@
                             </li>
                             <li><a target="_blank" style="font-family: ziti;font-size: 20px;" href="Pics.html">校史</a>
                             </li>
-                            <li><a target="_blank" style="font-family: ziti;font-size: 20px;"
-                                    href="Timeline.html">时间线</a></li>
+                            <li><a target="_blank" style="font-family: ziti;font-size: 20px;" href="Timeline.html">时间线</a>
+                            </li>
                             <li><a target="_blank" style="font-family: ziti;font-size: 20px;" href="index.html">主页</a>
                             </li>
                         </ul>
                     </nav>
                     <div class="hero-text">
                         <h1>
-                            <span>It is,</span>
+                            <span style="font-family: 'my_font',serif">2021</span>
                             <br>
-                            <img id="headerTxt" height="220" src="img/headerTxt.png">
+                            <div class="headerTxt">
+                                <img height="220" src="img/headerTxt1.png" alt="">
+                            </div>
 
                         </h1>
                         <h3>如果可以选择重来……</h3>
@@ -65,6 +67,17 @@
                 </div>
             </div>
         </header>
+
+        <section class="case-study">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        
+
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
 <!-- Some Javascript -->
@@ -76,5 +89,8 @@
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/jquery.waypoints.min.js"></script>
 <script src="js/jquery.countup.min.js"></script>
+<script>
+    document.querySelector('.headerTxt').classList.add('headerTxt', 'flipInx')
+</script>
 
 </html>
