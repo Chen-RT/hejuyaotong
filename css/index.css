@@ -96,31 +96,6 @@ header.hero h3 {
     vertical-align: middle;
 }
 
-.SocialLink {
-    margin-top: 40px;
-}
-
-.SocialLink a {
-    padding: 5px;
-    opacity: 0.6;
-}
-
-.SocialLink .contact {
-    font-size: 20px;
-    opacity: 0.6;
-    font-weight: 400;
-    display: inline-block;
-}
-
-.SocialLink a:hover {
-    opacity: 1;
-}
-
-.SocialLink a img {
-    max-height: 30px;
-    margin-left: 6px;
-}
-
 /* Search_Box */
 
 
@@ -168,6 +143,13 @@ ul.main-nav.show-it {
     box-shadow: 0 0 100px rgba(0, 0, 0, 0.15);
 }
 
+.headerTxt {
+    display: inline-block;
+    margin: 0 0.5rem;
+
+    animation: animate__fadeInRight; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
 
 .purple {
     color: #7447ae;
