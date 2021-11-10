@@ -19,14 +19,17 @@
     <link rel="stylesheet" href="css/bootstrap-theme.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/swiper.min.css">
-    <link rel="stylesheet" href="css/index.css">
+    <!-- time liner -->
+    <link rel="stylesheet" href="css/timeliner-container.css">
+
+    <link rel="stylesheet" href="css/create.css">
 </head>
 
 <body>
     <div id="content">
         <header class="hero">
             <div class="container">
-                <div class="col-md-6 col-md-offset-6 col-xs-12">
+                <div class="col-md-9 col-md-offset-3 col-xs-12">
                     <nav>
                         <ul class="main-nav">
                             <li><a target="_blank" style="font-family: ziti;font-size: 20px;" href="About.html">关于</a>
@@ -39,8 +42,8 @@
                             </li>
                         </ul>
                     </nav>
-                    <div class="col-md-12">
-                        <h4 class="sub-heading">This is</h4>
+                    <div class="col-md-12" id="main-container">
+                        <!-- <h4 class="sub-heading">This is</h4> -->
                         <h1 class="heading pink">
                             <span class="pink">The timeline of</span>
                             COVID-19 <br>
@@ -69,10 +72,10 @@
                                             <p>2020年01月09日 新冠出现首个死亡病例</p>
                                             <p>2020年01月15日 国家疾控中心启动一级应急响应</p>
                                         </blockquote>
-    
+
                                         <br class="clear">
                                     </dd><!-- /.timeline-event-content -->
-    
+
                                     <span class="tick tick-before"></span>
                                     <dt id="t2" class="timeline-event"><a>急速扩散</a></dt>
                                     <span class="tick tick-after"></span>
@@ -96,16 +99,16 @@
                                             </p>
                                             <p>2020年02月13日 累计确诊63743例，死亡1487例，湖北省委书记、武汉市委书记换帅</p>
                                             <p>2020年02月29日 累计确诊79968例，死亡2873例</p>
-    
+
                                         </blockquote>
-    
+
                                         <br class="clear">
                                     </dd><!-- /.timeline-event-content -->
-    
+
                                 </dl><!-- /.timeline-series -->
                             </div><!-- /.timeline-wrapper -->
-    
-    
+
+
                             <div class="timeline-wrapper">
                                 <h2 class="timeline-time"><span>2020.3-4</span></h2>
                                 <dl class="timeline-series">
@@ -125,11 +128,11 @@
                                             <p>2020年03月24日 累计确诊81846例，死亡3287例</p>
                                             <p>2020年03月27日 累计确诊82214例，死亡3301例</p>
                                             <p>2020年03月30日 累计确诊82545例，死亡3314例</p>
-    
+
                                         </blockquote>
                                         <br class="clear">
                                     </dd><!-- /.timeline-event-content -->
-    
+
                                     <span class="tick tick-before"></span>
                                     <dt id="t4" class="timeline-event"><a>逐渐减缓的4月</a></dt>
                                     <span class="tick tick-after"></span>
@@ -154,11 +157,11 @@
                                         </blockquote>
                                         <br class="clear">
                                     </dd><!-- /.timeline-event-content -->
-    
-    
+
+
                                 </dl><!-- /.timeline-series -->
                             </div><!-- /.timeline-wrapper -->
-    
+
                             <div class="timeline-wrapper">
                                 <h2 class="timeline-time"><span>2020.5-6</span></h2>
                                 <dl class="timeline-series">
@@ -173,9 +176,9 @@
                                         <br class="clear">
                                     </dd><!-- /.timeline-event-content -->
                                 </dl><!-- /.timeline-series -->
-    
+
                             </div><!-- /.timeline-wrapper -->
-    
+
                             <div class="timeline-wrapper">
                                 <h2 class="timeline-time"><span>2020.7-至今</span></h2>
                                 <dl class="timeline-series">
@@ -209,22 +212,22 @@
                                     </dd><!-- /.timeline-event-content -->
                                 </dl>
                             </div>
-    
+
                             <button class="timeline-toggle">+ expand all</button>
-    
+
                             <br class="clear">
-    
+
                         </div><!-- /#timeline -->
-    
-    
-                    </div>
-                </div>
 
 
                     </div>
                 </div>
+
+
             </div>
-        </header>
+    </div>
+    </div>
+    </header>
     </div>
 </body>
 <!-- Some Javascript -->
@@ -236,5 +239,15 @@
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/jquery.waypoints.min.js"></script>
 <script src="js/jquery.countup.min.js"></script>
+
+<script type="text/javascript" src="js/timeliner.js"></script>
+<script>
+    $(document).ready(function () {
+        $.timeliner({
+            timelineContainer: '#timeline',
+        });
+        $('.venobox').venobox();
+    });
+</script>
 
 </html>
