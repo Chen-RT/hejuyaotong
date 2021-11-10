@@ -1,0 +1,36 @@
+
+.container-small img {
+    width: 100%;
+    height: 100%;
+  }
+  .container-small {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 20px;
+  }
+  .container-small span {
+    color: yellow;
+    font-size: 23px;
+  }
+  .container-small h2 {
+    width: 100%;
+    height: 10vh;
+    /* background-color: rgb(126, 160, 95); */
+    margin: 0 auto;
+  }
+  .container-small-start {
+    font-size: 30px;
+    color: ghostwhite;
+    line-height: 8vh;
+  }
+  .container-small-end {
+    width: 40%;
+    height: 10vh;
+    margin-left: 50%;
+    text-align: center;
+    font-size: 25px;
+    color: rgba(174, 69, 223, 0.932);
+    border-bottom: 4px solid rgba(25, 26, 25, 0.952);
+  }
+    
