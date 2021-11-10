@@ -156,7 +156,134 @@ ul.main-nav.show-it {
 }
 
 /* Main-show */
+.case-study .col-md-12 {
+    transform: translateY(-80px);
+    -webkit-transform: translateY(-80px);
+    padding: 5em 3em;
+    background-color: #fff;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.15);
+}
 
+h4.sub-heading {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #4e4c58;
+}
+
+h1.heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #4e4c58;
+    font-size: 3em;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h1.heading span {
+    font-weight: 600;
+}
+
+h1.heading:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height: 3px;
+    width: 100px;
+}
+
+h1.heading.purple:after {
+    background-color: #7447ae;
+}
+
+h1.heading.pink:after {
+    background-color: #ff2a75;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    padding: 4em 1em;
+}
+
+.swiper-slide {
+    font-size: 18px;
+    background: #fff;
+}
+
+.client-box {
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.03);
+    padding: 3.5em 2em;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    text-align: center;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.client-box .client-logo {
+    max-height: 120px;
+}
+
+.client-box h3.title {
+    color: #4e4c58;
+    margin-bottom: 2em;
+}
+
+.client-box p.tag {
+    color: #7447ae;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1em;
+}
+
+.client-box a {
+    color: #333;
+    font-style: italic;
+    opacity: 0.5;
+}
+
+.client-box.swiper-slide-next {
+    -ms-transform: scale(1.15);
+    /* IE 9 */
+    -webkit-transform: scale(1.15);
+    /* Safari */
+    transform: scale(1.15);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    width: 80px;
+    height: 80px;
+    background-size: 80px 80px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
+    border-radius: 5em;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+}
+
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+    background-image: url(../img/arrow-right.png);
+    right: -40px;
+}
+
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+    background-image: url(../img/arrow-left.png);
+    left: -40px;
+}
 
 
 .purple {
