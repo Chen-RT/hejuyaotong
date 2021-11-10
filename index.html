@@ -32,14 +32,14 @@
                 <div class="col-md-6 col-md-offset-6 col-xs-12">
                     <nav>
                         <ul class="main-nav">
-                            <li><a target="_blank" style="font-family: ziti;font-size: 20px;" href="About.html">关于</a>
+                            <li><a target="_blank" style="font-size: 20px;" href="About.html">关于</a>
                             </li>
-                            <li><a target="_blank" style="font-family: ziti;font-size: 20px;" href="Pics.html">校史</a>
+                            <li><a target="_blank" style="font-size: 20px;" href="Pics.html">校史</a>
                             </li>
-                            <li><a target="_blank" style="font-family: ziti;font-size: 20px;"
+                            <li><a target="_blank" style="font-size: 20px;"
                                     href="Timeline.html">时间线</a>
                             </li>
-                            <li><a target="_blank" style="font-family: ziti;font-size: 20px;" href="index.html">主页</a>
+                            <li><a target="_blank" style="font-size: 20px;" href="index.html">主页</a>
                             </li>
                         </ul>
                     </nav>
@@ -53,7 +53,7 @@
                         </h1>
                         <h3>如果可以选择重来……</h3>
                         <div class="btn-o">
-                            <a target="_blank" href="Timeline.html" class="btn-p">Get Start</a>
+                            <a id="getStart" class="btn-p" href="javascript:void(0)">Get Start</a>
                         </div>
 
                     </div>
@@ -65,7 +65,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h4 class="sub-heading">Firstly</h4>
+                        <h4 class="sub-heading" id="firstly">Firstly</h4>
                         <h1 class="heading purple">
                             <span class="purple">Nobody</span> cared about <br>This disaster</h1>
                         <br><br><br>
@@ -136,8 +136,13 @@
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/jquery.waypoints.min.js"></script>
 <script src="js/jquery.countup.min.js"></script>
-<script>
-    document.querySelector('.headerTxt').classList.add('headerTxt', 'flipInx')
+<script type="text/javascript">
+    document.getElementById("getStart").onclick = function () {
+        window.scrollTo({
+            top: 1000,
+            behavior: "smooth"
+        })
+    };
 </script>
 
 </html>
