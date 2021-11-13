@@ -1,30 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Cute";
+    src: url(../fonts/萌趣软糖体.ttf);
+}
+
+@font-face {
+    font-family: "Clearface ITC Bold";
+    src: url(../fonts/Clearface-Bold.otf);
+}
+
+@font-face {
+    font-family: "kanti";
+    src: url(../fonts/锐字云字库楷体GB.ttf);
+}
+
+@font-face {
+    font-family: "zcoo";
+    src: url(../fonts/ZCOOLKuaiLe-Regular.ttf);
+}
+
+@font-face {
+    font-family: "hh";
+    src: url(../fonts/LiuJianMaoCao-Regular.ttf);
+}
+
+@font-face {
+    font-family: "ww";
+    src: url(../fonts/Clearface-Bold.otf);
+}
+
+* {
+    font-family: "zcoo";
+}
+
+body {
+    font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    background-color: #f2f2f2;
+    font-size: 16px;
+    color: #222;
+    font-weight: normal;
+    letter-spacing: 0.03em;
+}
+
+@font-face {
+    font-family: 'my_font';
+    src: url("../fonts/font.ttf") format('truetype');
+}
+
+a {
+    color: #7447ae;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+section {
+    width: 100%;
+}
+
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    /* color: #FFF; */
+    outline: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+header.hero {
+    background: url(../img/header.png) no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    padding-bottom: 100px;
+}
+
+ul,
+a,
+li,
+ol {
+    text-decoration: none;
+}
+
+header.hero .hero-text {
+    margin-top: 25%;
+    margin-bottom: 20%;
+}
+
+header.hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4.5em;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+header.hero h1 span,
+header.hero h3 {
+    font-weight: 300;
+}
+
+.btn-o {
+    margin-top: 30px;
+    margin-left: 5px;
+}
+
+.btn-p {
+    background-image: none;
+    border-color: transparent;
+    background-color: rgb(255, 161, 38);
+    padding: 8px 16px;
+    margin-top: 55px;
+    color: #fff;
+    border-radius: 12em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Search_Box */
+
+
+
+/* navigation */
+
+nav {
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 3em;
+    cursor: pointer;
+    transition: .25s ease-in-out;
+}
+
+ul.main-nav li {
+    float: right;
+}
+
+ul.main-nav li a {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 5px 15px;
+}
+
+ul.main-nav li a:hover {
+    color: #ffbe61;
+}
+
+ul.main-nav.show-it {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: .25s;
+}
+
+/* Main-show */
+#main-container {
+    padding-top: 30px;
+    margin-top: 120px;
+    padding-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#main-container h1 {
+    margin-left: 30px;
+}
+
+.timeline-container {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.case-study .col-md-12 {
+    transform: translateY(-80px);
+    -webkit-transform: translateY(-80px);
+    padding: 5em 3em;
+    background-color: #fff;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.15);
+}
+
+h4.sub-heading {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #4e4c58;
+}
+
+h1.heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #4e4c58;
+    font-size: 3em;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h1.heading span {
+    font-weight: 600;
+}
+
+h1.heading:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height: 3px;
+    width: 100px;
+}
+
+
+.headerTxt {
+    display: inline-block;
+    margin: 0 0.5rem;
+
+    animation: animate__fadeInRight;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+    /* don't forget to set a duration! */
+}
+
+.purple {
+    color: #7447ae;
+}
+
+.pink {
+    color: #ff2a75;
+}
+
+.blue {
+    color: #37a7ff;
+}
 
 .container-small img {
     width: 100%;
     height: 100%;
-  }
-  .container-small {
+}
+
+.container-small {
     width: 80%;
-    height: 100%;
     margin: 0 auto;
     font-size: 20px;
-  }
-  .container-small span {
+}
+
+.container-small span {
     color: yellow;
     font-size: 23px;
-  }
-  .container-small h2 {
+}
+
+.container-small h2 {
     width: 100%;
     height: 10vh;
     /* background-color: rgb(126, 160, 95); */
     margin: 0 auto;
-  }
-  .container-small-start {
+}
+
+.experience-item h5 {
+    /* background-color: crimson; */
+    height: 5vh;
+}
+
+.item-text {
+    width: 50%;
+    height: auto;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+    /* background-color: #000; */
+}
+
+.desc-2 {
+    width: 50%;
+    height: 20vh;
+    /* background-color: cadetblue; */
+    margin-left: 10%;
+    margin-top: 5vh;
+    font-size: 22px;
+}
+
+.container-small-start {
     font-size: 30px;
     color: ghostwhite;
     line-height: 8vh;
-  }
-  .container-small-end {
+}
+
+.experience-item {
+    display: flex;
+    align-items: center;
+}
+
+.experience-item1 {
+    height: 40vh;
+    float: right;
+    /* border-radius: 50%; */
+}
+
+.experience-item2 {
+    width: 100%;
+    height: 40vh;
+}
+
+.experience-item1 .item-text {
+    width: 100%;
+}
+
+
+.experience-item-2 {
+    width: 300px;
+
+}
+
+/* margin-right: 1vh;**/
+
+.experience-item2 .image-wrap {
+    float: left;
+    margin-right: 5%;
+}
+
+.experience-item1 .image-wrap {
+    margin-left: 5%;
+}
+
+.experience-item img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 2px solid rgb(220, 221, 160);
+}
+
+.container-small-end {
     width: 40%;
     height: 10vh;
     margin-left: 50%;
@@ -32,5 +351,4 @@
     font-size: 25px;
     color: rgba(174, 69, 223, 0.932);
     border-bottom: 4px solid rgba(25, 26, 25, 0.952);
-  }
-    
+}
