@@ -16,8 +16,8 @@
     <!-- CSS Sources -->
     <link rel="stylesheet" href="css/loading.css">
     <link rel="stylesheet" href="css/vivify.min.css">
-    <link href="https://cdn.bootcss.com/font-awesome/5.8.0/css/all.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.bootcss.com/font-awesome/5.8.0/css/all.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <!-- Bootstraps -->
     <link rel="stylesheet" href="css/bootstrap-theme.css">
@@ -28,47 +28,46 @@
 </head>
 
 <body>
-    <div class="con">
-        <header class="hero">
-            <div class="container">
-                <div class="col-md-6 col-md-offset-6 col-xs-12">
-                    <nav>
-                        <ul class="main-nav">
-                            <li><a style="font-size: 20px;" href="About.html">关于</a>
-                            </li>
-                            <li><a target="_blank" style="font-size: 20px;" href="Pics.html">校史</a>
-                            </li>
-                            <li><a target="_blank" style="font-size: 20px;"
-                                   href="Timeline.html">时间线</a>
-                            </li>
-                            <li><a target="_blank" style="font-size: 20px;" href="index.html">主页</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="hero-text">
-                        <h1>
-                            <span style="font-family: 'my_font',serif">2021</span>
-                            <br>
-                            <div id="headerTxt">
-                                <img height="220" src="img/headerTxt1.png" alt="">
-                            </div>
-                        </h1>
-                        <h3>人民有信仰，民族有希望，国家有力量</h3>
-                        <div class="btn-o">
-                            <a id="getStart" class="btn-p" href="javascript:void(0)">Get Start</a>
+<div class="content">
+    <section class="hero">
+        <div class="container">
+            <div class="col-md-6 col-md-offset-6 col-xs-12">
+                <nav>
+                    <ul class="main-nav">
+                        <li><a style="font-size: 20px;" href="About.html">关于</a>
+                        </li>
+                        <li><a target="_blank" style="font-size: 20px;" href="Pics.html">校史</a>
+                        </li>
+                        <li><a target="_blank" style="font-size: 20px;"
+                               href="Timeline.html">时间线</a>
+                        </li>
+                        <li><a target="_blank" style="font-size: 20px;" href="index.html">主页</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="hero-text">
+                    <h1>
+                        <span style="font-family: 'my_font',serif">2021</span>
+                        <br>
+                        <div id="headerTxt">
+                            <img height="220" src="img/headerTxt1.png" alt="">
                         </div>
-
-                        </div>
+                    </h1>
+                    <h3>人民有信仰，民族有希望，国家有力量</h3>
+                    <div class="btn-o">
+                        <a id="getStart" class="btn-p" href="javascript:void(0)">Get Start</a>
                     </div>
+
                 </div>
-            </section>
-            <section class="theme theme1" id="theme1" ref="theme_ref"></section>
-            <section class="theme" id="theme2"></section>
-            <section class="theme" id="theme3"></section>
-            <section class="theme" id="theme4"></section>
-            <section class="theme" id="theme5"></section>
+            </div>
         </div>
-    </div>
+    </section>
+    <section class="theme theme1" id="theme1" ref="theme_ref"></section>
+    <section class="theme" id="theme2"></section>
+    <section class="theme" id="theme3"></section>
+    <section class="theme" id="theme4"></section>
+    <section class="theme" id="theme5"></section>
+</div>
 </body>
 <!-- Some Javascript -->
 <script src="js/jquery-3.2.1.js"></script>
@@ -94,7 +93,7 @@
     //downLoaction指定位置的id
     this.$el.querySelector(`#hero`).scrollIntoView({
         behavior: "smooth",  // 平滑过渡
-        block:    "start"  // 上边框与视窗顶部平齐。默认值
+        block: "start"  // 上边框与视窗顶部平齐。默认值
     });
 
 
@@ -104,7 +103,7 @@
         // 跳转到指定位置并且平滑滚动
         this.$el
             .querySelector(".theme1")
-            .scrollIntoView({ block: "start", behavior: "smooth" });
+            .scrollIntoView({block: "start", behavior: "smooth"});
     }
 
 </script>
