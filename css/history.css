@@ -101,13 +101,13 @@ header.hero .hero-text {
 header.hero h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 4.5em;
-    font-weight: 600;
+    font-weight: 30;
     line-height: 1.4em;
 }
 
 header.hero h1 span,
 header.hero h3 {
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .btn-o {
@@ -239,8 +239,8 @@ h1.heading:after {
     color: #7447ae;
 }
 
-.pink {
-    color: #ff2a75;
+.red {
+    color: rgba(213, 37, 21, 1);
 }
 
 .blue {
@@ -259,24 +259,17 @@ h1.heading:after {
 }
 
 .container-small span {
-    color: yellow;
+    color: rgba(213, 37, 21, 1);
     font-size: 23px;
 }
 
 .container-small h2 {
     width: 100%;
-    height: 10vh;
-    /* background-color: rgb(126, 160, 95); */
-    margin: 0 auto;
-}
-
-.experience-item h5 {
-    /* background-color: crimson; */
-    height: 5vh;
+    margin-bottom: 25px;
 }
 
 .item-text {
-    width: 50%;
+    width: 75%;
     height: auto;
     word-wrap: break-word;
     word-break: break-all;
@@ -351,4 +344,8 @@ h1.heading:after {
     font-size: 25px;
     color: rgba(174, 69, 223, 0.932);
     border-bottom: 4px solid rgba(25, 26, 25, 0.952);
+}
+
+.experience-item {
+    color: #222;
 }
