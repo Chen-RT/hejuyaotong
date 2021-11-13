@@ -34,12 +34,11 @@
             <div class="col-md-6 col-md-offset-6 col-xs-12">
                 <nav>
                     <ul class="main-nav">
-                        <li><a style="font-size: 20px;" href="About.html">关于</a>
+                        <li><a target="_blank" style="font-size: 20px;" href="about.html">关于</a>
                         </li>
-                        <li><a target="_blank" style="font-size: 20px;" href="Pics.html">校史</a>
+                        <li><a target="_blank" style="font-size: 20px;" href="history.html">校史</a>
                         </li>
-                        <li><a target="_blank" style="font-size: 20px;"
-                               href="Timeline.html">时间线</a>
+                        <li><a target="_blank" style="font-size: 20px;" href="create.html">时间线</a>
                         </li>
                         <li><a target="_blank" style="font-size: 20px;" href="index.html">主页</a>
                         </li>
@@ -55,18 +54,53 @@
                     </h1>
                     <h3>人民有信仰，民族有希望，国家有力量</h3>
                     <div class="btn-o">
-                        <a id="getStart" class="btn-p" href="javascript:void(0)">Get Start</a>
+                        <a id="getStart" class="btn-p" href="#theme1">Get Start</a>
                     </div>
 
                 </div>
             </div>
         </div>
     </section>
-    <section class="theme theme1" id="theme1" ref="theme_ref"></section>
-    <section class="theme" id="theme2"></section>
-    <section class="theme" id="theme3"></section>
-    <section class="theme" id="theme4"></section>
-    <section class="theme" id="theme5"></section>
+    <section class="theme theme1" id="theme1" ref="theme_ref">
+        <h1 class="theme-h1" style="color: #0f0f0f"><span>2021</span>年<span>1</span>月<span>1</span>日</h1>
+        <h2 class="theme-h2">中国迎来“民法典时代”</h2>
+        <h3 class="theme1-h3">2021年1月1日起，<br>我国依法保护民事权利即将进入全新的“民法典时代”。</h3>
+    </section>
+    <section class="theme" id="theme2">
+        <h1 class="theme-h1"><span>2021</span>年<span>5</span>月<span>15</span>日</h1>
+        <h2 class="theme-h2" style="color: #FFFFFF">天问一号任务<br>实现我国航天发展史上6个首次</h2>
+        <h3 class="theme2-h3">
+            <p>- 首次实现地火转移轨道探测器发射</p>
+            <p>- 首次实现行星际飞行</p>
+            <p>- 首次实现地外行星软着陆</p>
+            <p>- 首次实现地外行星表面巡视探测</p>
+            <p>- 首次实现4亿公里距离的测控通信</p>
+            <p>- 首次获取第一手的火星科学数据</p>
+        </h3>
+    </section>
+    <section class="theme" id="theme3">
+        <h1 class="theme-h1"><span>2021</span>年<span>6</span>月<span>16</span>日</h1>
+        <h2 class="theme-h2" style="color: #FFFFFF">金沙江乌东德水电站<br>全部机组正式投产发电</h2>
+        <h3 class="theme3-h3">
+            <p>- 总装机容量1020万千瓦</p>
+            <p>- 全面投产发电后年均发电量将达389.1亿千瓦时</p>
+            <p>- 排名世界第七</p>
+            <p>- 也是世界上已投产单机容量最大的水轮发电机组</p>
+            <p>- 是实施“西电东送”的国家重大工程</p>
+        </h3>
+    </section>
+    <section class="theme" id="theme4">
+        <br>
+        <h3 style="color: #FFFFFF;padding-top: 2%;padding-left: 10%;font-family: fzhs, serif;font-size: 2em">当前，<br><br>世界上能工作的空间站只有两个，<br><br>一个是国际空间站，一个是中国空间站。</h3>
+        <h1 class="theme4-h1"><span>2021</span>年<span>6</span>月<span>17</span></h1>
+        <h2 class="theme4-h2">中国人首次进入自己的空间站</h2>
+    </section>
+    <section class="theme" id="theme5">
+        <h1 class="theme-h1" style="padding-left: 60%"><span>2021</span>年<span>8</span>月<span>8</span>日</h1>
+        <h2 class="theme-h2" style="color: #FFFFFF;padding-left: 60%">东京奥运会闭幕式</h2>
+        <br><br>
+        <h3 style="padding-left: 60%;font-size: 2em;font-family: fzhs, serif;color: #FFFFFF">中国共斩获<br> 38 金， 32 银， 18 铜</h3>
+    </section>
 </div>
 </body>
 <!-- Some Javascript -->
@@ -89,22 +123,6 @@
             behavior: "smooth"
         })
     };
-
-    //downLoaction指定位置的id
-    this.$el.querySelector(`#hero`).scrollIntoView({
-        behavior: "smooth",  // 平滑过渡
-        block: "start"  // 上边框与视窗顶部平齐。默认值
-    });
-
-
-    function gotheme1() {
-        // 获取元素在页面中的位置
-        console.log(this.$refs.theme_ref.getBoundingClientRect());
-        // 跳转到指定位置并且平滑滚动
-        this.$el
-            .querySelector(".theme1")
-            .scrollIntoView({block: "start", behavior: "smooth"});
-    }
 
 </script>
 
