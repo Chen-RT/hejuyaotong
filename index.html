@@ -10,6 +10,8 @@
 
     <!-- Loading Jquery -->
     <script src="js/jquery-3.2.1.js"></script>
+    <!-- Loading Vue -->
+    <script src="js/vue.min.js"></script>
 
     <!-- CSS Sources -->
     <link rel="stylesheet" href="css/loading.css">
@@ -27,52 +29,49 @@
 
 <body>
     <div class="con">
-        <header class="hero">
-            <div class="container">
-                <div class="col-md-6 col-md-offset-6 col-xs-12">
-                    <nav>
-                        <ul class="main-nav">
-                            <li><a style="font-size: 20px;" href="About.html">关于</a>
-                            </li>
-                            <li><a target="_blank" style="font-size: 20px;" href="Pics.html">校史</a>
-                            </li>
-                            <li><a target="_blank" style="font-size: 20px;"
-                                   href="Timeline.html">时间线</a>
-                            </li>
-                            <li><a target="_blank" style="font-size: 20px;" href="index.html">主页</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="hero-text">
-                        <h1>
-                            <span style="font-family: 'my_font',serif">2021</span>
-                            <br>
-                            <div id="headerTxt">
-                                <img height="220" src="img/headerTxt1.png" alt="">
+        <div id="content" class="content">
+            <section id="hero" class="hero">
+                <div class="container">
+                    <div class="col-md-6 col-md-offset-6 col-xs-12">
+                        <nav>
+                            <ul class="main-nav">
+                                <li><a style="font-size: 20px;" href="About.html">关于</a>
+                                </li>
+                                <li><a target="_blank" style="font-size: 20px;" href="Pics.html">校史</a>
+                                </li>
+                                <li><a target="_blank" style="font-size: 20px;"
+                                       href="Timeline.html">时间线</a>
+                                </li>
+                                <li><a target="_blank" style="font-size: 20px;" href="index.html">主页</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="hero-text">
+                            <h1>
+                                <span style="font-family: 'my_font',serif">2021</span>
+                                <br>
+                                <div id="headerTxt">
+                                    <img height="220" src="img/headerTxt1.png" alt="">
+                                </div>
+                            </h1>
+                            <h3>人民有信仰，民族有希望，国家有力量</h3>
+                            <div class="btn-o">
+                                <a id="getStart" class="btn-p" href="javascript:void(0);" @click="gotheme1">Get Start</a>
                             </div>
-                        </h1>
-                        <h3>人民有信仰，民族有希望，国家有力量</h3>
-                        <div class="btn-o">
-                            <a id="getStart" class="btn-p" href="javascript:void(0)">Get Start</a>
-                        </div>
 
+                        </div>
                     </div>
                 </div>
-            </div>
-        </header>
-        <div id="content" class="content">
-            <section class="theme" id="theme1">
-                <video id="bg-video" class="bg-video" src="https://chenruntong-1301783597.cos.ap-beijing.myqcloud.com/%E4%BD%95%E6%83%A7%E8%85%B0%E7%97%9B/videobg.mp4"></video>
             </section>
-            <section class="theme2" id="theme2"></section>
-            <section class="theme3" id="theme3"></section>
-            <section class="theme4" id="theme4"></section>
-            <section class="theme5" id="theme5"></section>
+            <section class="theme theme1" id="theme1" ref="theme_ref"></section>
+            <section class="theme" id="theme2"></section>
+            <section class="theme" id="theme3"></section>
+            <section class="theme" id="theme4"></section>
+            <section class="theme" id="theme5"></section>
         </div>
     </div>
-
-
 </body>
+
 <!-- Some Javascript -->
 <script src="js/jquery-3.2.1.js"></script>
 <!-- Parallax -->
@@ -86,53 +85,29 @@
 <script src="js/jquery.countup.min.js"></script>
 <script type="text/javascript">
 
-
-    function getScroll(){
-        return {
-            left: window.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft || 0,
-            top: window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0
-        };
-    }
-
     document.getElementById("getStart").onclick = function () {
-        document.getElementById("content").style.display = "block"
-        document.getElementById("theme1").style.display = "block";
-        document.getElementById("theme2").style.display = "block";
-        document.getElementById("theme3").style.display = "block";
-        document.getElementById("theme4").style.display = "block";
-        document.getElementById("theme5").style.display = "block";
 
         window.scrollTo({
-            top: 767,
+            top: 1000,
             behavior: "smooth"
         })
     };
 
-    var video = document.getElementById('bg-video');
-    var loop = 0;
+    //downLoaction指定位置的id
+    this.$el.querySelector(`#hero`).scrollIntoView({
+        behavior: "smooth",  // 平滑过渡
+        block:    "start"  // 上边框与视窗顶部平齐。默认值
+    });
 
-    setInterval(function Play(){
-        var scrollTop = getScroll().top;
-        console.log(scrollTop);
-        if (scrollTop >= 667) {
-            loop++;
-            console.log(loop);
-            video.play();
-        }
-        if (scrollTop > 1500){
-            video.style.display = 'none';
-            loop = 0;
-        }
 
-        if (scrollTop < 1500){
-            video.style.display = 'block';
-        }
-
-        if (loop > 9400) {
-            video.style.display = 'none';
-        }
-    }, 0.1)
-
+    function gotheme1() {
+        // 获取元素在页面中的位置
+        console.log(this.$refs.theme_ref.getBoundingClientRect());
+        // 跳转到指定位置并且平滑滚动
+        this.$el
+            .querySelector(".theme1")
+            .scrollIntoView({ block: "start", behavior: "smooth" });
+    }
 
 </script>
 
