@@ -12,6 +12,55 @@ body {
     justify-content: center;
 }
 
+/* navigation */
+
+ul,
+a,
+li {
+    text-decoration: none;
+}
+
+a {
+    transition: all 0.2s;
+}
+
+ul li {
+    list-style: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    outline: none;
+}
+
+nav {
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 3em;
+    cursor: pointer;
+    transition: .25s ease-in-out;
+}
+
+ul.main-nav li {
+    float: right;
+}
+
+ul.main-nav li a {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 5px 15px;
+}
+
+ul.main-nav li a:hover {
+    color: #ffbe61;
+}
+
 .a {
     position: relative;
     width: 700px;

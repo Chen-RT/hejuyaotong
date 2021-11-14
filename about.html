@@ -1,69 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>开发者</title>
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/about.css">
 </head>
+
 <body>
-<!-- 名片分三大块
+    <!-- 名片分三大块
 最外层的一块a
 文字一大块b
 平面圆柱一块c -->
-<div class="a">
-    <div class="b">
-        <a href="#">开 发 者</a>
-        <h2>From SAST</h2>
-        <span>
-            请&nbsp&nbsp&nbsp鼠<br>
-            有&nbsp&nbsp&nbsp标<br>
-            序&nbsp&nbsp&nbsp放<br>
-            排&nbsp&nbsp&nbsp在<br>
-            队&nbsp&nbsp&nbsp上<br>
-            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp面
-        </span>
-    </div>
-    <div class="c">
-        <!-- --i是用来计算平面圆柱的动效延迟和距离的
+    <div class="container">
+        <div class="col-md-6 col-md-offset-6 col-xs-12">
+            <nav>
+                <ul class="main-nav">
+                    <li><a target="_blank" style="font-size: 20px;" href="about.html">关于</a>
+                    </li>
+                    <li><a style="font-size: 20px;" href="history.html">校史</a>
+                    </li>
+                    <li><a target="_blank" style="font-size: 20px;" href="index.html">主页</a>
+
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="a">
+            <div class="b">
+                <a href="#">开 发 者</a>
+                <h2>From SAST</h2>
+                <span>
+                    请&nbsp&nbsp&nbsp鼠<br>
+                    有&nbsp&nbsp&nbsp标<br>
+                    序&nbsp&nbsp&nbsp放<br>
+                    排&nbsp&nbsp&nbsp在<br>
+                    队&nbsp&nbsp&nbsp上<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp面
+                </span>
+            </div>
+            <div class="c">
+                <!-- --i是用来计算平面圆柱的动效延迟和距离的
         --w则是用来计算平面圆柱的宽度 -->
-        <div class="d" style="--i:1;--w:1.5"></div>
-        <div class="d" style="--i:2;--w:1.6"></div>
-        <div class="d" style="--i:3;--w:1.4"></div>
-        <div class="d" style="--i:4;--w:1.7"></div>
-        <div class="e" style="--i:1"></div>
+                <div class="d" style="--i:1;--w:1.5"></div>
+                <div class="d" style="--i:2;--w:1.6"></div>
+                <div class="d" style="--i:3;--w:1.4"></div>
+                <div class="d" style="--i:4;--w:1.7"></div>
+                <div class="e" style="--i:1"></div>
+            </div>
+            <!-- 设置介绍 -->
+            <div class="f">
+                <div class="card" style="margin-top: 0px;">
+                    <div class="photo">
+                        <img src="img/about/crt.jpg">
+                    </div>
+                    <h1 style="font-size: 1em;color: #FFFFFF">姓名：陈润桐</h1>
+                    <h2 style="font-size: 1em;color: #FFFFFF">学院：计算机学院</h2>
+                    <h2 style="font-size: 1em;color: #FFFFFF">Github：github.com/Chen-RT</h2>
+                    <h2 style="font-size: 1em;color: #FFFFFF">Blog：lknnz.link</h2>
+                </div>
+                <div class="card">
+                    <div class="photo">
+                        <img src="img/about/cxd.jpg">
+                    </div>
+                    <h1 style="font-size: 1em;color: #FFFFFF">姓名：陈炫栋</h1>
+                    <h2 style="font-size: 1em;color: #FFFFFF">学院：计算机学院</h2>
+                    <h2 style="font-size: 1em;color: #FFFFFF">Github：github.com/Xander-C</h2>
+                    <h2 style="font-size: 1em;color: #FFFFFF">Blog：xanderc.top</h2>
+                </div>
+                <div class="card">
+                    <div class="photo">
+                        <img src="img/about/zsk.jpg">
+                    </div>
+                    <h1 style="font-size: 1em;color: #FFFFFF">姓名：周善康</h1>
+                    <h2 style="font-size: 1em;color: #FFFFFF">学院：计算机学院</h2>
+                    <h2 style="font-size: 1em;color: #FFFFFF">Github：github.com/zhoushankang</h2>
+                    <h2 style="font-size: 1em;color: #FFFFFF">Gmail：shankang975@gmail.com</h2>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- 设置介绍 -->
-    <div class="f">
-        <div class="card" style="margin-top: 0px;">
-            <div class="photo">
-                <img src="img/about/crt.jpg">
-            </div>
-            <h1 style="font-size: 1em;color: #FFFFFF">姓名：陈润桐</h1>
-            <h2 style="font-size: 1em;color: #FFFFFF">学院：计算机学院</h2>
-            <h2 style="font-size: 1em;color: #FFFFFF">Github：github.com/Chen-RT</h2>
-            <h2 style="font-size: 1em;color: #FFFFFF">Blog：lknnz.link</h2>
-        </div>
-        <div class="card">
-            <div class="photo">
-                <img src="img/about/cxd.jpg">
-            </div>
-            <h1 style="font-size: 1em;color: #FFFFFF">姓名：陈炫栋</h1>
-            <h2 style="font-size: 1em;color: #FFFFFF">学院：计算机学院</h2>
-            <h2 style="font-size: 1em;color: #FFFFFF">Github：github.com/Xander-C</h2>
-            <h2 style="font-size: 1em;color: #FFFFFF">Blog：xanderc.top</h2>
-        </div>
-        <div class="card">
-            <div class="photo">
-                <img src="img/about/zsk.jpg">
-            </div>
-            <h1 style="font-size: 1em;color: #FFFFFF">姓名：周善康</h1>
-            <h2 style="font-size: 1em;color: #FFFFFF">学院：计算机学院</h2>
-            <h2 style="font-size: 1em;color: #FFFFFF">Github：github.com/zhoushankang</h2>
-            <h2 style="font-size: 1em;color: #FFFFFF">Gmail：shankang975@gmail.com</h2>
-        </div>
-    </div>
-</div>
 </body>
+
 </html>
