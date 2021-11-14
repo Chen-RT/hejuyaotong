@@ -37,9 +37,8 @@ a:active {
 
 nav {
     height: 40px;
-    width: 100%;
+    width: 930px;
     position: absolute;
-    right: 0;
     top: 3em;
     cursor: pointer;
     transition: .25s ease-in-out;
@@ -222,4 +221,10 @@ ul.main-nav li a:hover {
 
 .card h2 {
     margin-right: -2em;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
