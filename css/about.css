@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-body{
+body {
     background-color: rgb(204, 212, 230);
     background-image: url("../img/header.png");
     background-repeat: no-repeat;
@@ -12,7 +12,7 @@ body{
     justify-content: center;
 }
 
-.a{
+.a {
     position: relative;
     width: 700px;
     height: 400px;
@@ -22,7 +22,8 @@ body{
     border-radius: 20px;
     overflow: hidden;
 }
-.b{
+
+.b {
     position: absolute;
     width: 200px;
     height: 300px;
@@ -30,69 +31,82 @@ body{
     margin: 75px 50px;
     transition: 1s;
 }
-.b a{
+
+.b a {
     text-decoration: none;
     color: #fff;
     font: 900 28px '';
 }
-.b h2{
+
+.b h2 {
     /* 鼠标放开时的动画，第一个值是动画的过渡时间
     第二个值是延迟一秒后执行动画 */
     transition: .5s 1s;
     opacity: 0;
     color: #ffde7d;
 }
-.b span{
+
+.b span {
     transition: .5s 1s;
     color: #fff;
     font: 500 15px '';
     position: absolute;
     top: 70px;
 }
-.c{
+
+.c {
     position: absolute;
     top: -130px;
     right: -240px;
 }
-.d,.e{
+
+.d,
+.e {
     position: absolute;
     right: calc(var(--i)*100px);
     width: calc(var(--w)*40px);
     height: 500px;
     overflow: hidden;
     border-radius: 100px;
-    transform: rotateZ(220deg) translate(0,0);
-    background: rgb(240,220,150);
+    transform: rotateZ(220deg) translate(0, 0);
+    background: rgb(240, 220, 150);
     transition: .5s .5s;
 }
-.d:nth-child(2){
-    background: rgb(240,190,230);
+
+.d:nth-child(2) {
+    background: rgb(240, 190, 230);
 }
-.e{
+
+.e {
     left: -470px;
     top: -140px;
     width: 70px;
-    background-color: rgb(90,220,150);
+    background-color: rgb(90, 220, 150);
 }
-.a:hover .c div{
+
+.a:hover .c div {
     /* 设置延迟动画 */
     transition: .5s calc(var(--i)*.1s);
     /* 移动的轨迹 */
-    transform: rotateZ(220deg) translate(-200px,400px);
+    transform: rotateZ(220deg) translate(-200px, 400px);
 }
-.a:hover .b{
+
+.a:hover .b {
     transition: 1s .5s;
     left: 370px;
 }
-.a:hover .b span{
+
+.a:hover .b span {
     transition: 1s .5s;
     top: 105px;
 }
-.a:hover .b h2{
+
+.a:hover .b h2 {
     transition: 1s .5s;
     opacity: 1;
 }
-.f{
+
+.f {
     width: 250px;
     height: 250px;
     position: absolute;
@@ -101,7 +115,8 @@ body{
     opacity: 0;
     transition: .5s;
 }
-.a:hover .f{
+
+.a:hover .f {
     transition: 1s 1.3s;
     opacity: 1;
 }
@@ -122,6 +137,7 @@ body{
     align-items: center;
     flex-direction: column;
 }
+
 .photo {
     position: absolute;
     width: 100%;
@@ -129,13 +145,18 @@ body{
     top: 0;
     border-radius: 0;
     overflow: hidden;
-    box-shadow: 0 0 20px #000000;
+    box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.30);
     transition: 0.5s;
 }
+
 .photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.card:hover {
+    overflow: visible;
 }
 
 .card:hover .photo {
@@ -149,6 +170,7 @@ body{
 .card h1 {
     margin-right: -2em;
 }
+
 .card h2 {
     margin-right: -2em;
 }
