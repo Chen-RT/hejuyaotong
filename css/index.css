@@ -153,8 +153,7 @@ section.hero {
 
 ul,
 a,
-li,
-ol {
+li {
     text-decoration: none;
 }
 
@@ -226,112 +225,4 @@ ul.main-nav li a {
 
 ul.main-nav li a:hover {
     color: #ffbe61;
-}
-
-ul.main-nav.show-it {
-    opacity: 1;
-    visibility: visible;
-    transition-delay: .25s;
-}
-
-/* Main-show */
-/*.case-study .col-md-12 {*/
-/*    transform: translateY(-80px);*/
-/*    -webkit-transform: translateY(-80px);*/
-/*    padding: 5em 3em;*/
-/*    background-color: #fff;*/
-/*    box-shadow: 0 0 100px rgba(0, 0, 0, 0.15);*/
-/*}*/
-
-h4.sub-heading {
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    color: #4e4c58;
-}
-
-h1.heading {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    color: #4e4c58;
-    font-size: 3em;
-    position: relative;
-    padding-bottom: 10px;
-}
-
-h1.heading span {
-    font-weight: 600;
-}
-
-h1.heading:after {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    height: 3px;
-    width: 100px;
-}
-
-h1.heading.purple:after {
-    background-color: #7447ae;
-}
-
-h1.heading.pink:after {
-    background-color: #ff2a75;
-}
-
-.client-box {
-    background-color: #fff;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.03);
-    padding: 3.5em 2em;
-    border-radius: 5px;
-    border: 1px solid #eee;
-    text-align: center;
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    transition: all 0.2s;
-}
-
-.client-box .client-logo {
-    max-height: 120px;
-}
-
-.client-box h3.title {
-    color: #4e4c58;
-    margin-bottom: 2em;
-}
-
-.client-box p.tag {
-    color: #7447ae;
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 1em;
-}
-
-.client-box a {
-    color: #333;
-    font-style: italic;
-    opacity: 0.5;
-}
-
-.headerTxt {
-    display: inline-block;
-    margin: 0 0.5rem;
-
-    animation: animate__fadeInRight;
-    /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 2s;
-    /* don't forget to set a duration! */
-}
-
-.purple {
-    color: #7447ae;
-}
-
-.pink {
-    color: #ff2a75;
-}
-
-.blue {
-    color: #37a7ff;
 }
