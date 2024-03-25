@@ -10,67 +10,104 @@
 
     <!-- Loading Jquery -->
     <script src="js/jquery-3.2.1.js"></script>
+    <!-- Loading Vue -->
+    <script src="js/vue.min.js"></script>
 
     <!-- CSS Sources -->
     <link rel="stylesheet" href="css/loading.css">
+    <link rel="stylesheet" href="css/vivify.min.css">
+    <link href="https://cdn.bootcss.com/font-awesome/5.8.0/css/all.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-    <link href="https://cdn.bootcss.com/font-awesome/5.8.0/css/all.css" rel="stylesheet" />
     <!-- Bootstraps -->
     <link rel="stylesheet" href="css/bootstrap-theme.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/transformation.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-    <div id="content">
-        <header class="hero">
-            <div class="container">
-                <div class="col-md-6 col-md-offset-6 col-xs-12">
-                    <nav>
-                        <ul class="main-nav">
-                            <li><a target="_blank" style="font-family: ziti;font-size: 20px;" href="About.html">关于</a>
-                            </li>
-                            <li><a target="_blank" style="font-family: ziti;font-size: 20px;" href="Pics.html">图片</a>
-                            </li>
-                            <li><a target="_blank" style="font-family: ziti;font-size: 20px;"
-                                    href="Timeline.html">时间线</a></li>
-                            <li><a target="_blank" style="font-family: ziti;font-size: 20px;" href="index.html">主页</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="hero-text">
-                        <h1>
-                            <span>It is,</span>
-                            <br>
-                            <p id="our2020">
-                                Our 2020
-                            </p>
+<div class="content">
+    <section class="hero">
+        <div class="container">
+            <div class="col-md-6 col-md-offset-6 col-xs-12">
+                <nav>
+                    <ul class="main-nav">
+                        <li><a style="font-size: 20px;" href="about.html">关于</a>
+                        </li>
+                        <li><a style="font-size: 20px;" href="history.html">校史</a>
+                        </li>
+                        <li><a style="font-size: 20px;" href="content.html">强国有我</a>
+                        </li>
+                        <li><a style="font-size: 20px;" href="index.html">主页</a>
 
-                        </h1>
-                        <h3>如果可以选择重来……</h3>
-                        <div class="btn-o">
-                            <a target="_blank" href="Timeline.html" class="btn-p">Time-Line-></a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="hero-text">
+                    <h1>
+                        <span style="font-family: 'my_font',serif">2021</span>
+                        <br>
+                        <div id="headerTxt">
+                            <img height="220" src="img/headerTxt1.png" alt="">
                         </div>
-                        <div class="SocialLink">
-                            <p class="contact">Contact to me:</p>
-                            <a href="https://zlhad.github.io/">
-                                <img src="img/wechat.png">
-                            </a>
-                            <a href="https://github.com/ZLHad">
-                                <img src="img/github.png">
-                            </a>
-                        </div>
-
-
+                    </h1>
+                    <h3>人民有信仰，民族有希望，国家有力量</h3>
+                    <div class="btn-o">
+                        <a id="getStart" class="btn-p" href="#theme1">Get Start</a>
                     </div>
+
                 </div>
             </div>
-        </header>
-    </div>
+        </div>
+    </section>
+    <section class="theme theme1" id="theme1" ref="theme_ref">
+        <h1 class="theme-h1"><span>2021</span>年<span>1</span>月<span>1</span>日</h1>
+        <h2 class="theme-h2" style="color: #FFFFFF">中国迎来“民法典时代”</h2>
+        <h3 class="theme1-h3" style="color: #FFFFFF">2021年1月1日起，<br>我国依法保护民事权利即将进入全新的“民法典时代”。</h3>
+    </section>
+    <section class="theme" id="theme2">
+        <h1 class="theme-h1"><span>2021</span>年<span>5</span>月<span>15</span>日</h1>
+        <h2 class="theme-h2" style="color: #FFFFFF">天问一号任务<br>实现我国航天发展史上6个首次</h2>
+        <h3 class="theme2-h3">
+            <p>- 首次实现地火转移轨道探测器发射</p>
+            <p>- 首次实现行星际飞行</p>
+            <p>- 首次实现地外行星软着陆</p>
+            <p>- 首次实现地外行星表面巡视探测</p>
+            <p>- 首次实现4亿公里距离的测控通信</p>
+            <p>- 首次获取第一手的火星科学数据</p>
+        </h3>
+    </section>
+    <section class="theme" id="theme3">
+        <h1 class="theme-h1"><span>2021</span>年<span>6</span>月<span>16</span>日</h1>
+        <h2 class="theme-h2" style="color: #FFFFFF">金沙江乌东德水电站<br>全部机组正式投产发电</h2>
+        <h3 class="theme3-h3">
+            <p>- 总装机容量1020万千瓦</p>
+            <p>- 全面投产发电后年均发电量将达389.1亿千瓦时</p>
+            <p>- 排名世界第七</p>
+            <p>- 也是世界上已投产单机容量最大的水轮发电机组</p>
+            <p>- 是实施“西电东送”的国家重大工程</p>
+        </h3>
+    </section>
+    <section class="theme" id="theme4">
+        <br>
+        <h3 style="color: #FFFFFF;padding-top: 2%;padding-left: 10%;font-family: fzhs, serif;font-size: 2em">当前，<br><br>世界上能工作的空间站只有两个，<br><br>一个是国际空间站，一个是中国空间站。</h3>
+        <h1 class="theme4-h1"><span>2021</span>年<span>6</span>月<span>17</span></h1>
+        <h2 class="theme4-h2">中国人首次进入自己的空间站</h2>
+    </section>
+    <section class="theme" id="theme5">
+        <h1 class="theme-h1" style="padding-left: 60%"><span>2021</span>年<span>8</span>月<span>8</span>日</h1>
+        <h2 class="theme-h2" style="color: #FFFFFF;padding-left: 60%">东京奥运会闭幕式</h2>
+        <br><br>
+        <h3 style="padding-left: 60%;font-size: 2em;font-family: fzhs, serif;color: #FFFFFF">中国共斩获<br> 38 金， 32 银， 18 铜</h3>
+    </section>
+</div>
 </body>
 <!-- Some Javascript -->
 <script src="js/jquery-3.2.1.js"></script>
+<!-- Parallax -->
+<script src="js/parallax.js"></script>
 <!-- Initialize Client Swiper -->
 <script src="js/swiper.jquery.min.js"></script>
 <script src="js/client.swiper.js"></script>
